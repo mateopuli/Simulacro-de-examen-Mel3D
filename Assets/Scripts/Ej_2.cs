@@ -19,19 +19,12 @@ public class Ej_2 : MonoBehaviour
      if(producto1 + producto2 + producto3 > dinerodisponible)
         {
             Debug.Log("El precio de los tres productos supera el dinero disponible");
+            Debug.Log("Te faltan " +(monto - dinerodisponible));
         }
         else
         {
             Debug.Log("El precio de los tres productos no supera el dinero disponible");
-        }
-        resto = dinerodisponible - monto;
-        if(resto < monto)
-        {
-            Debug.Log("Sobran" +resto+ "pesos");
-        }
-        else if (resto > monto)
-        {
-            Debug.Log("Faltan" +resto+ "pesos");
+            Debug.Log("Te sobran " +(dinerodisponible - monto));
         }
     }
 
